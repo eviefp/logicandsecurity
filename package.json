@@ -2,8 +2,9 @@
   "name": "logicandsecurity",
   "version": "0.0.1",
   "description": "Logic and Security website for unibuc",
-  "main": "source/server.js",
+  "main": "server.js",
   "scripts": {
+    "start": "node server.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
