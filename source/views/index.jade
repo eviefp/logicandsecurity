@@ -1,0 +1,223 @@
+doctype html
+//
+    Future Imperfect by HTML5 UP
+    html5up.net | @n33co
+    Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+html
+    head
+        title Logic and Security
+        meta(charset='utf-8')
+        meta(name='viewport', content='width=device-width, initial-scale=1')
+        //if lte IE 8
+            script(src='assets/js/ie/html5shiv.js')
+        link(rel='stylesheet', href='assets/css/main.css')
+        //if lte IE 9
+            link(rel='stylesheet', href='assets/css/ie9.css')
+        //if lte IE 8
+            link(rel='stylesheet', href='assets/css/ie8.css')
+    body
+        // Wrapper
+        #wrapper
+            // Header
+            header#header
+                h1
+                    a(href='#') Logic and Security
+                nav.links
+                    ul
+                        li
+                            a(href='#') Lorem
+                        li
+                            a(href='#') Ipsum
+                        li
+                            a(href='#') Feugiat
+                        li
+                            a(href='#') Tempus
+                        li
+                            a(href='#') Adipiscing
+                nav.main
+                    ul
+                        li.search
+                            a.fa-search(href='#search') Search
+                            form#search(method='get', action='#')
+                                input(type='text', name='query', placeholder='Search')
+                        li.menu
+                            a.fa-bars(href='#menu') Menu
+            // Menu
+            section#menu
+                // Search
+                section
+                    form.search(method='get', action='#')
+                        input(type='text', name='query', placeholder='Search')
+                // Links
+                section
+                    ul.links
+                        li
+                            a(href='#')
+                                h3 Lorem ipsum
+                                p Feugiat tempus veroeros dolor
+                        li
+                            a(href='#')
+                                h3 Dolor sit amet
+                                p Sed vitae justo condimentum
+                        li
+                            a(href='#')
+                                h3 Feugiat veroeros
+                                p Phasellus sed ultricies mi conguefafa
+                        li
+                            a(href='#')
+                                h3 Etiam sed consequat
+                                p Porta lectus amet ultricies
+                // Actions
+                section
+                    ul.actions.vertical
+                        li
+                            a.button.big.fit(href='#') Log In
+            // Main
+            #main
+                // Posts
+                each page in articles
+                    != renderTemplate(page, locals.test)
+
+                // Pagination
+                ul.actions.pagination
+                    li
+                        a.disabled.button.big.previous(href='') Previous Page
+                    li
+                        a.button.big.next(href='#') Next Page
+            // Sidebar
+            if sidebar
+                section#sidebar
+                    // Intro
+                    section#intro
+                        a.logo(href='#')
+                            img(src='images/logo.jpg', alt='')
+                        header
+                            h2 Logic and Security
+                            p
+                                | Another fine responsive site template by 
+                                a(href='http://html5up.net') HTML5 UP
+                    // Mini Posts
+                    section
+                        .mini-posts
+                            // Mini Post
+                            article.mini-post
+                                header
+                                    h3
+                                        a(href='#') Vitae sed condimentum
+                                    time.published(datetime='2015-10-20') October 20, 2015
+                                    a.author(href='#')
+                                        img(src='images/avatar.jpg', alt='')
+                                a.image(href='#')
+                                    img(src='images/pic04.jpg', alt='')
+                            // Mini Post
+                            article.mini-post
+                                header
+                                    h3
+                                        a(href='#') Rutrum neque accumsan
+                                    time.published(datetime='2015-10-19') October 19, 2015
+                                    a.author(href='#')
+                                        img(src='images/avatar.jpg', alt='')
+                                a.image(href='#')
+                                    img(src='images/pic05.jpg', alt='')
+                            // Mini Post
+                            article.mini-post
+                                header
+                                    h3
+                                        a(href='#') Odio congue mattis
+                                    time.published(datetime='2015-10-18') October 18, 2015
+                                    a.author(href='#')
+                                        img(src='images/avatar.jpg', alt='')
+                                a.image(href='#')
+                                    img(src='images/pic06.jpg', alt='')
+                            // Mini Post
+                            article.mini-post
+                                header
+                                    h3
+                                        a(href='#') Enim nisl veroeros
+                                    time.published(datetime='2015-10-17') October 17, 2015
+                                    a.author(href='#')
+                                        img(src='images/avatar.jpg', alt='')
+                                a.image(href='#')
+                                    img(src='images/pic07.jpg', alt='')
+                    // Posts List
+                    section
+                        ul.posts
+                            li
+                                article
+                                    header
+                                        h3
+                                            a(href='#') Lorem ipsum fermentum ut nisl vitae
+                                        time.published(datetime='2015-10-20') October 20, 2015
+                                    a.image(href='#')
+                                        img(src='images/pic08.jpg', alt='')
+                            li
+                                article
+                                    header
+                                        h3
+                                            a(href='#') Convallis maximus nisl mattis nunc id lorem
+                                        time.published(datetime='2015-10-15') October 15, 2015
+                                    a.image(href='#')
+                                        img(src='images/pic09.jpg', alt='')
+                            li
+                                article
+                                    header
+                                        h3
+                                            a(href='#') Euismod amet placerat vivamus porttitor
+                                        time.published(datetime='2015-10-10') October 10, 2015
+                                    a.image(href='#')
+                                        img(src='images/pic10.jpg', alt='')
+                            li
+                                article
+                                    header
+                                        h3
+                                            a(href='#') Magna enim accumsan tortor cursus ultricies
+                                        time.published(datetime='2015-10-08') October 8, 2015
+                                    a.image(href='#')
+                                        img(src='images/pic11.jpg', alt='')
+                            li
+                                article
+                                    header
+                                        h3
+                                            a(href='#') Congue ullam corper lorem ipsum dolor
+                                        time.published(datetime='2015-10-06') October 7, 2015
+                                    a.image(href='#')
+                                        img(src='images/pic12.jpg', alt='')
+                    // About
+                    section.blurb
+                        h2 About
+                        p
+                            | Mauris neque quam, fermentum ut nisl vitae, convallis maximus nisl. Sed mattis nunc id lorem euismod amet placerat. Vivamus porttitor magna enim, ac accumsan tortor cursus at phasellus sed ultricies.
+                        ul.actions
+                            li
+                                a.button(href='#') Learn More
+                    // Footer
+                    section#footer
+                        ul.icons
+                            li
+                                a.fa-twitter(href='#')
+                                    span.label Twitter
+                            li
+                                a.fa-facebook(href='#')
+                                    span.label Facebook
+                            li
+                                a.fa-instagram(href='#')
+                                    span.label Instagram
+                            li
+                                a.fa-rss(href='#')
+                                    span.label RSS
+                            li
+                                a.fa-envelope(href='#')
+                                    span.label Email
+                        p.copyright
+                            | © Untitled. Design: 
+                            a(href='http://html5up.net') HTML5 UP
+                            | . Images: 
+                            a(href='http://unsplash.com') Unsplash
+                            | .
+        // Scripts
+        script(src='assets/js/jquery.min.js')
+        script(src='assets/js/skel.min.js')
+        script(src='assets/js/util.js')
+        //if lte IE 8
+            script(src='assets/js/ie/respond.min.js')
+        script(src='assets/js/main.js')
